@@ -1,9 +1,11 @@
 {
-  "name": "data-monitor",
+  "name": "comet",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "license": "MIT",
   "scripts": {
+    "build": "npx tsc",
     "start": "npx ts-node server.ts"
   },
   "dependencies": {
@@ -14,5 +16,8 @@
     "@types/node": "^20.3.3",
     "typescript": "^5.1.6",
     "ts-node": "^10.9.1"
-  }
+  },
+  "files": ["lib/**/*"],
+  "keywords": ["Hello", "Greeter"],
+  "author": "C-J"
 }
